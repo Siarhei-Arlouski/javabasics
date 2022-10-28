@@ -12,8 +12,10 @@ public class Main {
         }
     taskTwo();
     taskThree();
-    taskFour();*/
+    taskFour();
     taskFive();
+    taskSix();*/
+    taskSeven();
     }
     /*public static void taskTwo() {                          //условные операторы - задание 2
         Scanner scanner = new Scanner(System.in);
@@ -71,8 +73,39 @@ public class Main {
         if (x4 < 0) negative++;
         System.out.println("Количество положительных чисел: " + positive);
         System.out.println("Количество отрицательных чисел: " + negative);
+    }
+    public static void taskFive() {                             //условные операторы - задание 5
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        int x = scanner.nextInt();
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Введите второе число: ");
+        int x2 = scanner2.nextInt();
+        Scanner scanner3 = new Scanner(System.in);
+        System.out.println("Введите третье число: ");
+        int x3 = scanner3.nextInt();
+        int max = Math.max(x, x2);
+        System.out.println("Самое большое число: " + Math.max(x3, max));
+    }
+    public static void taskSix() {                          //условные операторы - задание 6
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        int x = scanner.nextInt();
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Введите второе число: ");
+        int x2 = scanner2.nextInt();
+        Scanner scanner3 = new Scanner(System.in);
+        System.out.println("Введите третье число: ");
+        int x3 = scanner3.nextInt();
+        int sum1 = x + x2;
+        int sum2 = x + x3;
+        int sum3 = x2 + x3;
+        int max = Math.max(sum1, sum2);
+        System.out.println("Наибольшая сумма: " + Math.max(sum3, max));
+        int min = Math.min(sum1, sum2);
+        System.out.println("Наименьшая сумма: " + Math.min(sum3, min));
     }*/
-    public static void taskFive() {
+    public static void taskSeven() {
         
     }
 }
