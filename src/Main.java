@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {                //условные операторы - задание 1
-        /*Scanner scanner = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Введите число: ");
-        int x = scanner.nextInt();
-        if (x > 10) {
+        int z = scanner1.nextInt();
+        if (z > 10) {
             System.out.println("Число больше десяти");
-        } else if (x < 10) {
+        } else if (z < 10) {
             System.out.println("Число меньше десяти");
         }
     taskTwo();
@@ -24,9 +24,10 @@ public class Main {
     Scanner scanner = new Scanner(System.in);                   //циклы - задание 4
     int x = scanner.nextInt();                                  //циклы - задание 4
     taskFourCycle(x);                                           //циклы - задание 4
-    System.out.println(taskFourCycle(x));*/                       //циклы - задание 4
+    System.out.println(taskFourCycle(x));                       //циклы - задание 4
+    taskFiveCycle();
     }
-    /*public static void taskTwo() {                          //условные операторы - задание 2
+    public static void taskTwo() {                          //условные операторы - задание 2
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
         int x = scanner.nextInt();
@@ -174,6 +175,7 @@ public class Main {
         }
     }
     public static void taskOneCycle() {                 //циклы - задание 1
+        System.out.println("Таблица умножения числа 4: ");
         for (int x = 0; x <11; x++) {
             System.out.println("4 * " + x + " = " + x * 4);
         }
@@ -208,8 +210,13 @@ public class Main {
             result = result * i;
         }
         return result;
-    }*/
-    public static void taskFiveCycle() {
-        
+    }
+    public static void taskFiveCycle() {                    //циклы - задание 5
+        System.out.println("Введите слово: ");
+        Scanner scanner = new Scanner(System.in);
+        String x = scanner.nextLine();
+        for (int i = 0; i < x.length(); i++) {
+            System.out.println(x.charAt(i));
+        }
     }
 }
