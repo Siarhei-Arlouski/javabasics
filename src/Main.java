@@ -14,8 +14,9 @@ public class Main {
     taskThree();
     taskFour();
     taskFive();
-    taskSix();*/
-    taskSeven();
+    taskSix();
+    taskSeven();*/
+    taskEight();
     }
     /*public static void taskTwo() {                          //условные операторы - задание 2
         Scanner scanner = new Scanner(System.in);
@@ -104,8 +105,16 @@ public class Main {
         System.out.println("Наибольшая сумма: " + Math.max(sum3, max));
         int min = Math.min(sum1, sum2);
         System.out.println("Наименьшая сумма: " + Math.min(sum3, min));
+    }
+    public static void taskSeven() {                        //условные операторы - задание 7
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число: ");
+        int x = scanner.nextInt();
+        if (x%2 == 0) {
+            System.out.println("Число четное");
+        } else {System.out.println("Число нечетное");}
     }*/
-    public static void taskSeven() {
+    public static void taskEight() {
         
     }
 }
