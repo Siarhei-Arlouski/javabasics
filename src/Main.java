@@ -16,8 +16,15 @@ public class Main {
     taskFive();
     taskSix();
     taskSeven();
-    taskEight();*/
+    taskEight();
     taskOneCycle();
+    taskTwoCycle();
+    taskThreeCycle();
+    System.out.println("Введите число: ");                      //циклы - задание 4
+    Scanner scanner = new Scanner(System.in);                   //циклы - задание 4
+    int x = scanner.nextInt();                                  //циклы - задание 4
+    taskFourCycle(x);                                           //циклы - задание 4
+    System.out.println(taskFourCycle(x));*/                       //циклы - задание 4
     }
     /*public static void taskTwo() {                          //условные операторы - задание 2
         Scanner scanner = new Scanner(System.in);
@@ -165,8 +172,44 @@ public class Main {
                     return;
             }
         }
+    }
+    public static void taskOneCycle() {                 //циклы - задание 1
+        for (int x = 0; x <11; x++) {
+            System.out.println("4 * " + x + " = " + x * 4);
+        }
+    }
+    public static void taskTwoCycle() {                 //циклы - задание 2
+        System.out.println("Введите число: ");
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        for (int i = 0; i < x; i+=2) {
+            System.out.println(i);
+        }
+    }
+    public static void taskThreeCycle() {               //циклы - задание 3
+        System.out.println("Введите число: ");
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int n1 = 0;
+        int n2 = 1;
+        int n3;
+        System.out.println(n1);
+        System.out.println(n2);
+        for (int i = 0; i < x; i++) {
+            n3 = n1 + n2;
+            System.out.println(n3 + " ");
+            n1 = n2;
+            n2 = n3;
+        }
+    }
+    public static int taskFourCycle(int x) {                //циклы - задание 4
+        int result = 1;
+        for (int i = 1; i <= x; i++) {
+            result = result * i;
+        }
+        return result;
     }*/
-    public static void taskOneCycle() {
-
+    public static void taskFiveCycle() {
+        
     }
 }
