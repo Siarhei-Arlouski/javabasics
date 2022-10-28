@@ -15,8 +15,9 @@ public class Main {
     taskFour();
     taskFive();
     taskSix();
-    taskSeven();*/
-    taskEight();
+    taskSeven();
+    taskEight();*/
+    taskOneCycle();
     }
     /*public static void taskTwo() {                          //условные операторы - задание 2
         Scanner scanner = new Scanner(System.in);
@@ -113,8 +114,59 @@ public class Main {
         if (x%2 == 0) {
             System.out.println("Число четное");
         } else {System.out.println("Число нечетное");}
+    }
+    public static void taskEight() {                        //условные операторы - задание 8
+        System.out.println("Магазин:\n 1. Чипсы (4 рубля)\n 2. Кола (2 рубля)\n 3. Батончик (3 рубля)\nВыберите товар: ");
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            int x = scanner.nextInt();
+            switch (x) {
+                case 1:
+                    System.out.println("Ваш товар Чипсы. Внесите 4 рубля");
+                    Scanner firstCase = new Scanner(System.in);
+                    int c1 = firstCase.nextInt();
+                    if (c1 == 4) {
+                        System.out.println("Спасибо за покупку!");
+                    } else if (c1 < 4) {
+                        System.out.println("Денег не хватает!");
+                    } else {
+                        int sum = c1 - 4;
+                        System.out.println("Спасибо за покупку! Ваша сдача: " + sum + " рубля");
+                    }
+                    return;
+                case 2:
+                    System.out.println("Ваш товар Кола. Внесите 2 рубля");
+                    Scanner secondCase = new Scanner(System.in);
+                    int c2 = secondCase.nextInt();
+                    if (c2 == 2) {
+                        System.out.println("Спасибо за покупку!");
+                    } else if (c2 < 2) {
+                        System.out.println("Денег не хватает!");
+                    } else {
+                        int sum = c2 - 2;
+                        System.out.println("Спасибо за покупку! Ваша сдача: " + sum + " рубля");
+                    }
+                    return;
+                case 3:
+                    System.out.println("Ваш товар Батончик. Внесите 3 рубля");
+                    Scanner thirdCase = new Scanner(System.in);
+                    int c3 = thirdCase.nextInt();
+                    if (c3 == 3) {
+                        System.out.println("Спасибо за покупку!");
+                    } else if (c3 < 3) {
+                        System.out.println("Денег не хватает!");
+                    } else {
+                        int sum = c3 - 3;
+                        System.out.println("Спасибо за покупку! Ваша сдача: " + sum + " рубля");
+                    }
+                    return;
+                default:
+                    System.out.println("Такого товара не существует.");
+                    return;
+            }
+        }
     }*/
-    public static void taskEight() {
-        
+    public static void taskOneCycle() {
+
     }
 }
